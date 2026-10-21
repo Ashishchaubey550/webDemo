@@ -70,7 +70,7 @@ export default function ShowroomTour() {
                 </p>
               </div>
 
-              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "0.5rem" }}>
+              <div className="showroom-action-btns">
                 <a
                   href={`tel:+${COMPANY_INFO.phone1Raw}`}
                   className="btn btn-call"

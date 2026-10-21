@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="40%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="favSteelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182032" />
+      <stop offset="100%" stop-color="#07090E" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#favBg)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5" />
+  
+  <!-- Outer Precision Hex Shield -->
+  <polygon points="32,6 54,18.7 54,44.3 32,57 10,44.3 10,18.7" fill="#0B0F19" stroke="url(#favGoldGrad)" stroke-width="2.2" stroke-linejoin="round" />
+  
+  <!-- Inner Cutout -->
+  <polygon points="32,10 49,20.2 49,42.8 32,53 15,42.8 15,20.2" fill="#111726" />
+  
+  <!-- Sculpted Bold Industrial "N" Monogram -->
+  <path d="M20 42V21L25.5 17.5V42H20Z" fill="url(#favSteelGrad)" />
+  <path d="M25.5 17.5L40 39.5V45L25.5 23V17.5Z" fill="url(#favGoldGrad)" />
+  <polygon points="38.5,21 44,17.5 44,42 38.5,42" fill="url(#favSteelGrad)" />
+  <circle cx="32" cy="31" r="2" fill="#FFFFFF" />
+</svg>

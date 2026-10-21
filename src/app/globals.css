@@ -1515,6 +1515,7 @@ img {
   }
   .modal-content-grid {
     grid-template-columns: 1fr;
+    padding: 1.5rem;
   }
   .hero-stats-row {
     grid-template-columns: repeat(2, 1fr);
@@ -1522,24 +1523,80 @@ img {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .nav-links {
     display: none;
   }
   .hero-headline {
-    font-size: 2.1rem;
+    font-size: clamp(1.85rem, 7vw, 2.4rem);
+  }
+  .hero-cta-group .btn {
+    width: 100%;
   }
   .topbar {
     display: none;
   }
+  .hero-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+  .hero-stats-row {
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+  .stat-value {
+    font-size: 1.75rem;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .modal-box {
+    width: 95%;
+    max-height: 92vh;
+    border-radius: var(--radius-lg);
+  }
+  .modal-content-grid {
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+  .modal-media-pane {
+    min-height: 200px;
+    padding: 0.75rem;
+  }
+  .modal-media-pane img {
+    max-height: 190px;
+  }
+  .drawer-panel {
+    max-width: 100%;
+  }
   .floating-action-cluster {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    gap: 0.65rem;
   }
   .floating-btn span {
     display: none;
   }
   .floating-btn {
-    padding: 0.85rem;
+    width: 50px;
+    height: 50px;
+    padding: 0;
     border-radius: 50%;
+  }
+  .floating-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo-lockup .brand-name {
+    font-size: 1.15rem;
+  }
+  .catalog-search-box {
+    min-width: 100%;
   }
 }
